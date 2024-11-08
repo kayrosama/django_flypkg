@@ -23,10 +23,11 @@ El proyecto atendera la necesidad de aplicar controles y tracking de los documen
 
 ```bash
 cd /path/devops
-
-git clone [pkgbox](https://github.com/kayrosama/pkgbox.git "pkgbox")
-
+git clone https://github.com/kayrosama/pkgbox.git
 ```
+
+
+
 
 ##### 2) Preparamos el entorno virtual, instalamos las librerias del proyecto e inicializamos la aplicacion
 
@@ -35,18 +36,14 @@ Para Linux:
 ```bash
 apt-get update && apt-get full-upgrade -y
 apt-get install -f -y python3-pip python3-venv 
-.
+
 cd /path/devops/pkgbox
 python3 -m venv .venv
 source .venv/bin/active
 python3 -m pip install -r requirements.txt
-.
-python3 manage.py runserver
-. o
-python manage.py runserver 0:8000 
-. o
-python manage.py runserver 0.0.0.0:8000
-.
+
+python3 manage.py runserver / o / python manage.py runserver 0:8000 / o / python manage.py runserver 0.0.0.0:8000
+
 ```
 
 ##### 3) Instalando y configurando el complemento de [weasyprint](https://weasyprint.org/ "weasyprint")
