@@ -23,9 +23,9 @@ El proyecto atendera la necesidad de aplicar controles y tracking de los documen
 
 ```bash
 cd /path/devops
-.
-git clone [https://github.com/kayrosama/XXX.git](https://github.com/kayrosama/XXX.git "Proyecto XXX")
-.
+
+git clone [pkgbox](https://github.com/kayrosama/pkgbox.git "pkgbox")
+
 ```
 
 ##### 2) Preparamos el entorno virtual, instalamos las librerias del proyecto e inicializamos la aplicacion
