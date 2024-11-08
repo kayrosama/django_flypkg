@@ -1,4 +1,4 @@
-# flypkgbox
+# pkgbox
 Exportacion - Importacion
 
 Control y Tracking de documentos, paquetes y cajas.
@@ -19,14 +19,34 @@ El proyecto atendera la necesidad de aplicar controles y tracking de los documen
 
 # Pasos de instalación
 
-##### 1) Descomprimir el proyecto en una carpeta de tu sistema operativo
+##### 1) Descomprimir el proyecto en el workspace de desarrollo
 
-##### 2) Crear un entorno virtual para posteriormente instalar las librerias del proyecto
+```bash
+cd /path/devops
+.
+git clone [https://github.com/kayrosama/XXX.git](https://github.com/kayrosama/XXX.git "Proyecto XXX")
+.
+```
+
+##### 2) Preparamos el entorno virtual, instalamos las librerias del proyecto e inicializamos la aplicacion
 
 Para Linux:
 
 ```bash
-python3 -m venv .venv/flypkgbox
+apt-get update && apt-get full-upgrade -y
+apt-get install -f -y python3-pip python3-venv 
+.
+cd /path/devops/pkgbox
+python3 -m venv .venv
+source .venv/bin/active
+python3 -m pip install -r requirements.txt
+.
+python3 manage.py runserver
+. o
+python manage.py runserver 0:8000 
+. o
+python manage.py runserver 0.0.0.0:8000
+.
 ```
 
 ##### 3) Instalando y configurando el complemento de [weasyprint](https://weasyprint.org/ "weasyprint")
@@ -38,22 +58,43 @@ Linux - Instalar las [librerias](https://doc.courtbouillon.org/weasyprint/stable
 Para Linux:
 
 ```bash
-source .venv/flypkgbox/bin/active
+.
+.
+.
 ```
 
 ##### 6) Creando tablas del sistema
 
+Para Linux:
+
 ```bash
-python manage.py migrate
+.
+.
+.
 ```
 
 ##### 9) Iniciando el servicio
 
+Para Linux:
+
 ```bash
-python manage.py runserver 0:8000 o python manage.py runserver 0.0.0.0:8000
+.
+.
+.
 ```
 
 ------------
+#####10) Paso 1: Crear un proyecto Django
+
+Para Linux:
+
+```bash
+.
+.
+.
+```
+
+#####11) Creando tablas del sistema
 
 #  Gracias 
 
